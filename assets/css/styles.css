@@ -1536,8 +1536,8 @@ i-rounded {
   position: fixed;
   top: 0;
   left: 20px;
-  width: 75px;
-  height: 75px;
+  width: 64px;
+  height: 64px;
   z-index: 25;
 }
 @media (max-width: 991px) {
