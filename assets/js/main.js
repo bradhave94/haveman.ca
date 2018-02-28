@@ -145,48 +145,7 @@
         $('.nav-trigger-close').click(function(){
             $navigation.fadeOut('fast');
         });
-        
-        
-        
-        /*
-         * Section profile - gauge chart, requires chartist js.
-         */
-        
-        var $profile = $('.profile'),
-            $profileChart = $('.profile-chart'),
-            $ctChartWrapper = $('<div>', {class: 'ct-chart-wrapper'}),
-            $ctChart = $('<div>', {class: 'gauge-chart-graph ct-chart ct-square'}),
-            ctSeries = [],
-            ctTotal = 0,
-            ctPercent;
-        
-        $ctChartWrapper.appendTo($profile);
-        $ctChart.appendTo($ctChartWrapper);
-        
-        $profileChart.find('.item').each(function(){
-            ctPercent = $('span', $(this)).data('percent');
-            ctSeries.push(ctPercent);
-            ctTotal += (ctPercent * 2);
-            $('<span class="percent font-family-alt text-uppercase"></span>').prependTo($(this));
-            $('.percent', $(this)).text(ctPercent + '%.');
-        });
-        
-        if ($profileChart.length > 0){
-            $(window).smartload(function(){
-                new Chartist.Pie('.gauge-chart-graph', {
-                    series: ctSeries
-                }, {
-                    donut: true,
-                    donutWidth: 60,
-                    startAngle: 180,
-                    total: ctTotal,
-                    showLabel: false
-                });
-            });
-        }
-        
-        
-        
+
         /*
          * Section studio - gallery carousel, requires flickity.
          */
