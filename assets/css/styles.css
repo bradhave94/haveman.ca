@@ -5,7 +5,7 @@
 \*---------------------------------------------*/
 
 /**
-*    Table of Contents: 
+*    Table of Contents:
 *        01. Reset
 *        02. Typography
 *        03. Background
@@ -39,8 +39,8 @@
 
 
 
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,700);
-@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(//fonts.googleapis.com/css?family=Roboto:400,300,700);
+@import url(//fonts.googleapis.com/css?family=Montserrat:400,700);
 
 
 
@@ -177,7 +177,7 @@ select::-ms-expand {
 \*------------------------------------*/
 
 /**
-* Heading 
+* Heading
 */
 
 h1,
@@ -1157,7 +1157,7 @@ i-rounded {
 .z-index-1 {
   z-index: 1 !important;
 }
-.z-index-1000 { 
+.z-index-1000 {
   z-index: 1000 !important;
 }
 
@@ -2853,7 +2853,7 @@ img.mfp-img {
 .mfp-zoom-out-cur, .mfp-zoom-out-cur .mfp-image-holder .mfp-close {
     cursor: url("../images/icon-zoom.png"), -moz-zoom-out;
     cursor: url("../images/icon-zoom.png"), -webkit-zoom-out;
-    cursor: url("../images/icon-zoom.png"), zoom-out; 
+    cursor: url("../images/icon-zoom.png"), zoom-out;
 }
 @keyframes rotateplane {
   0% {
