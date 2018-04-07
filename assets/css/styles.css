@@ -3202,9 +3202,7 @@ img.mfp-img {
   right: 0;
 }
 
-.flex-direction-nav {
-    display: none;
-}
+
 
 
 
@@ -3434,4 +3432,8 @@ img.mfp-img {
   .footer .copyright {
     bottom: 20px;
   }
+}
+
+.flex-direction-nav {
+    display: none !important;
 }
