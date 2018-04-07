@@ -156,7 +156,7 @@
             
             $carousel.flickity({
                 cellSelector: '.gallery-cell',
-                draggable: false,
+                draggable: true,
                 autoPlay: true,
                 freeScroll: true,
                 pageDots: false,
