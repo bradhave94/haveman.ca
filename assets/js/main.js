@@ -182,13 +182,14 @@
             var $testimonialSlider = $('.testimonial-slider'),
                 $testimonialSliderNav = $('.testimonial-slider-nav', $testimonialSlider);
             
-            $testimonialSlider.flexslider({
-                controlNav: false,
-                directionNav : false,
-                selector: '.slides > .item',
-                slideshowSpeed: 4000,
-                slideshow: false
-            });
+            // assets/js/main.js
+                $testimonialSlider.flexslider({
+                    controlNav: true,
+                    directionNav : true,
+                    selector: '.slides > .item',
+                    slideshowSpeed: 4000,
+                    slideshow: true // animate automatically
+                });
             
             $testimonialSliderNav.find('i.nav-previous').click(function(){
                 $testimonialSlider.flexslider('prev');
