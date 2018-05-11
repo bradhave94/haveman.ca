@@ -192,11 +192,11 @@
                     slideshow: true // animate automatically
                 });
             
-            $testimonialSliderNav.find('i.nav-previous').click(function(){
+            $testimonialSliderNav.find('svg.fa-long-arrow-alt-left').click(function(){
                 $testimonialSlider.flexslider('prev');
             });
             
-            $testimonialSliderNav.find('i.nav-next').click(function(){
+            $testimonialSliderNav.find('svg.fa-long-arrow-alt-right').click(function(){
                 $testimonialSlider.flexslider('next');
             });
         });
