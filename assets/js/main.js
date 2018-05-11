@@ -185,7 +185,7 @@
             
             // assets/js/main.js
                 $testimonialSlider.flexslider({
-                    controlNav: true,
+                    controlNav: false,
                     directionNav : true,
                     selector: '.slides > .item',
                     slideshowSpeed: 4000,
