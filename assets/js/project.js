@@ -80,7 +80,7 @@
 
                                 '<div class="mfp-projectDetail">' +
                                     '<div class="mfp-projectTrigger">' +
-                                        '<div class="mfp-triggerBtn"><i class="icon-To-Top"></i></div>' +
+                                        '<div class="mfp-triggerBtn"><i class="fas fa-level-up-alt"></i></div>' +
                                         '<div class="mfp-projectTitleWrap">' +
                                             '<div class="display-table-cell vertical-align-middle">' +
                                                 '<span class="display-block font-family-alt letter-spacing-1 text-small text-uppercase">Project</span>' +
