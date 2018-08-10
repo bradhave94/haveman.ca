@@ -1,0 +1,460 @@
+<h1><a id="Custom_Module_Fields_0"></a>Custom Module Fields</h1>
+<h3><a id="Available_Fields_2"></a>Available Fields</h3>
+<ul>
+<li><a href="#choice">Choice</a></li>
+<li><a href="#text">Text</a></li>
+<li><a href="#Image">Image</a></li>
+<li><a href="#Number">Number</a></li>
+<li><a href="#date">Date</a></li>
+<li><a href="#date-and-time">Date and Time</a></li>
+<li><a href="#cta">CTA</a></li>
+<li><a href="#blog">Blog</a></li>
+<li><a href="#tag">Tag</a></li>
+<li><a href="#form">Form</a></li>
+<li><a href="#color">Color</a></li>
+<li><a href="#page">Page</a></li>
+<li><a href="#workflow">Workflow</a></li>
+<li><a href="#follow-up-email">Follow-up Email</a></li>
+<li><a href="#email-address">Email Address</a></li>
+<li><a href="#file">File</a></li>
+<li><a href="#hubdb-table">HubDB Table</a></li>
+<li><a href="#simple-menu">Simple Menu</a></li>
+<li><a href="#menu">Menu</a></li>
+<li><a href="#meetings">Meetings</a></li>
+<li><a href="#logo">Logo</a></li>
+<li><a href="#icon">Icon</a></li>
+</ul>
+<h3><a id="Choice_27"></a>Choice</h3>
+<p>A radio select/pick list option visible in the content editor that lets the marketer select and insert a predefined value into the content of the module.</p>
+<ul>
+<li>For dropdown select - <code>&quot;display&quot; : &quot;select&quot;</code></li>
+<li>For radio buttons - <code>&quot;display&quot; : &quot;radio&quot;</code></li>
+</ul>
+<pre><code>{
+    &quot;id&quot; : &quot;&quot;,
+    &quot;name&quot; : &quot;&quot;,
+    &quot;label&quot; : &quot;&quot;,
+    &quot;display&quot; : &quot;select&quot;,
+    &quot;choices&quot; : [ 
+        [ &quot;valueOne&quot;, &quot;Label One&quot; ], 
+        [ &quot;valueTwo&quot;, &quot;Label Two&quot; ], 
+        [ &quot;valueThree&quot;, &quot;Label Three&quot; ]
+    ],
+    &quot;placeholder&quot; : &quot;&quot;,
+    &quot;type&quot; : &quot;choice&quot;,
+    &quot;default&quot; : &quot;&quot;
+}
+</code></pre>
+<h3><a id="Text_49"></a>Text</h3>
+<p>Use this for text sections of your custom module</p>
+<ul>
+<li><code>&quot;type&quot; : &quot;richtext&quot;</code> - for a rich text field</li>
+<li><code>&quot;placeholder&quot; : &quot;Placeholder&quot;</code> - to set placeholder text</li>
+<li><code>&quot;validation_regex&quot; : &quot;/.+\@.+\..+/&quot;</code> - for regex</li>
+</ul>
+<pre><code>{
+    &quot;id&quot; : &quot;&quot;,
+    &quot;name&quot; : &quot;&quot;,
+    &quot;label&quot; : &quot;&quot;,
+    &quot;type&quot; : &quot;text&quot;,
+    &quot;default&quot; : null
+}
+</code></pre>
+<h3><a id="Image_64"></a>Image</h3>
+<p>A single image container module that includes sizing options, default image, and alt text parameters</p>
+<ul>
+<li><code>&quot;resizable&quot; : false</code> - will hide resizing options</li>
+</ul>
+<pre><code>{
+    &quot;id&quot; : &quot;&quot;,
+    &quot;name&quot; : &quot;&quot;,
+    &quot;label&quot; : &quot; &quot;,
+    &quot;type&quot; : &quot;&quot;,
+    &quot;default&quot; : {
+        &quot;src&quot; : &quot;&quot;,
+        &quot;alt&quot; : &quot;&quot;,
+        &quot;width&quot; : &quot;&quot;,
+        &quot;height&quot; : &quot;&quot;
+    }
+}
+</code></pre>
+<h3><a id="Number_84"></a>Number</h3>
+<p>A spinner style text field that only supports decimal or integer values.</p>
+<pre><code>{
+    &quot;id&quot; : &quot;&quot;,
+    &quot;name&quot; : &quot;&quot;,
+    &quot;label&quot; : &quot;&quot;,
+    &quot;min&quot; : 1,
+    &quot;max&quot; : 3,
+    &quot;step&quot; : 1,
+    &quot;type&quot; : &quot;number&quot;,
+    &quot;default&quot; : 2
+}
+</code></pre>
+<h3><a id="Date_100"></a>Date</h3>
+<p>Selects a date. The value is stored as milliseconds since the epoch at midnight UTC on that date.</p>
+<pre><code>{
+  &quot;id&quot; : &quot;&quot;,
+  &quot;name&quot; : &quot;&quot;,
+  &quot;label&quot; : &quot;&quot;,
+  &quot;step&quot; : 1,
+  &quot;type&quot; : &quot;date&quot;,
+  &quot;default&quot; : 1533700800000
+}
+</code></pre>
+<h3><a id="Date_and_Time_114"></a>Date and Time</h3>
+<p>Selects a date and optional time. The value is stored as millseconds since the epoch in UTC.</p>
+<pre><code>{
+    &quot;id&quot; : &quot;&quot;,
+    &quot;name&quot; : &quot;&quot;,
+    &quot;label&quot; : &quot;&quot;,
+    &quot;step&quot; : 45,
+    &quot;type&quot; : &quot;datetime&quot;,
+    &quot;default&quot; : 1534910400000
+}
+</code></pre>
+<h3><a id="Image_128"></a>Image</h3>
+<p>Selects a CTA. Required for CTA module.</p>
+<pre><code>{
+    &quot;id&quot; : &quot;&quot;,
+    &quot;name&quot; : &quot;&quot;,
+    &quot;label&quot; : &quot;&quot;,
+    &quot;type&quot; : &quot;cta&quot;,
+    &quot;default&quot; : null
+}
+</code></pre>
+<h3><a id="Blog_141"></a>Blog</h3>
+<p>Selects a blog from the portal’s list of blogs. Required for Blog Email Subscription, Post Listing and RSS Listing modules.</p>
+<pre><code>{
+    &quot;id&quot; : &quot;&quot;,
+    &quot;name&quot; : &quot;&quot;,
+    &quot;label&quot; : &quot;&quot;,
+    &quot;type&quot; : &quot;blog&quot;,
+    &quot;default&quot; : 6019357429
+}
+</code></pre>
+<h3><a id="Tag_154"></a>Tag</h3>
+<p>Selects a blog tag from the portal. Required for RSS Listing module.</p>
+<ul>
+<li><code>&quot;tag_value&quot; : &quot;SLUG&quot;,</code></li>
+<li><code>&quot;tag_value&quot; : &quot;ID&quot;,</code></li>
+</ul>
+<pre><code>{
+    &quot;id&quot; : &quot;&quot;,
+    &quot;name&quot; : &quot;&quot;,
+    &quot;label&quot; : &quot;&quot;,
+    &quot;tag_value&quot; : &quot;SLUG&quot;,
+    &quot;type&quot; : &quot;tag&quot;,
+    &quot;default&quot; : &quot;insider&quot;
+}
+</code></pre>
+<h3><a id="Form_169"></a>Form</h3>
+<p>Selects a HubSpot form. Required for Form module.</p>
+<ul>
+<li><code>&quot;response_type&quot; : &quot;redirect&quot;,</code></li>
+<li><code>&quot;response_type&quot; : &quot;inline&quot;,</code></li>
+</ul>
+<pre><code>{
+    &quot;id&quot; : &quot;&quot;,
+    &quot;name&quot; : &quot;form_page&quot;,
+    &quot;label&quot; : &quot;Form page&quot;,
+    &quot;type&quot; : &quot;form&quot;,
+    &quot;default&quot; : {
+        &quot;form_id&quot; : &quot;&quot;,
+        &quot;response_type&quot; : &quot;redirect&quot;,
+        &quot;message&quot; : &quot;Thanks for submitting the form.&quot;,
+        &quot;redirect_id&quot; : page-id,
+        &quot;redirect_url&quot; : &quot;&quot;,
+        &quot;gotowebinar_webinar_key&quot; : null
+    }
+}
+</code></pre>
+<h3><a id="Color_190"></a>Color</h3>
+<p>Picks a color.</p>
+<pre><code>{
+    &quot;id&quot; : &quot;&quot;,
+    &quot;name&quot; : &quot;&quot;,
+    &quot;label&quot; : &quot;&quot;,
+    &quot;type&quot; : &quot;color&quot;,
+    &quot;default&quot; : {
+        &quot;color&quot; : &quot;#ffffff&quot;,
+        &quot;opacity&quot; : 100
+    }
+}
+</code></pre>
+<h3><a id="Page_205"></a>Page</h3>
+<p>Selects a published website or landing page. Required for form module.</p>
+<pre><code>{
+    &quot;id&quot; : &quot;&quot;,
+    &quot;name&quot; : &quot;&quot;,
+    &quot;label&quot; : &quot;&quot;,
+    &quot;type&quot; : &quot;page&quot;,
+    &quot;default&quot; : &quot;page-id&quot;
+}
+</code></pre>
+<h3><a id="Workflow_217"></a>Workflow</h3>
+<p>Selects a HubSpot workflow. Required for form module.</p>
+<pre><code>{
+    &quot;id&quot; : &quot;&quot;,
+    &quot;name&quot; : &quot;&quot;,
+    &quot;label&quot; : &quot;&quot;,
+    &quot;type&quot; : &quot;workflow&quot;,
+    &quot;default&quot; : workflow-id
+}
+</code></pre>
+<h3><a id="Followup_email_229"></a>Follow-up email</h3>
+<p>Selects a follow-up email.</p>
+<pre><code>{
+    &quot;id&quot; : &quot;&quot;,
+    &quot;name&quot; : &quot;&quot;,
+    &quot;label&quot; : &quot;&quot;,
+    &quot;type&quot; : &quot;followupemail&quot;,
+    &quot;default&quot; : email-id
+}
+</code></pre>
+<h3><a id="Email_address_241"></a>Email address</h3>
+<p>Autofills with email addresses from portal users, but also allows any other valid email address. The value is a list of strings.</p>
+<pre><code>{
+    &quot;id&quot; : &quot;&quot;,
+    &quot;name&quot; : &quot;&quot;,
+    &quot;label&quot; : &quot;&quot;,
+    &quot;type&quot; : &quot;email&quot;,
+    &quot;default&quot; : [ &quot;bradley@lean-labs.com&quot; ]
+}
+</code></pre>
+<h3><a id="File_253"></a>File</h3>
+<p>Similar to the image selector, but allows selection of other file types from File Manager. Useful for picking a PDF or image to link to. The picker attribute allows selecting files of certain types.</p>
+<ul>
+<li><code>&quot;picker&quot; : &quot;file&quot;</code></li>
+<li><code>&quot;picker&quot; : &quot;image&quot;</code></li>
+<li><code>&quot;picker&quot; : &quot;document&quot;</code></li>
+</ul>
+<pre><code>{
+    &quot;picker&quot; : &quot;file&quot;,
+    &quot;id&quot; : &quot;&quot;,
+    &quot;name&quot; : &quot;&quot;,
+    &quot;label&quot; : &quot;&quot;,
+    &quot;type&quot; : &quot;file&quot;,
+    &quot;default&quot; : &quot;file-url&quot;
+}
+</code></pre>
+<h3><a id="HubDB_Table_271"></a>HubDB Table</h3>
+<p>Selects a published HubDB table to associate with this module.</p>
+<pre><code>{
+  &quot;id&quot; : &quot;&quot;,
+  &quot;name&quot; : &quot;&quot;,
+  &quot;label&quot; : &quot;&quot;,
+  &quot;type&quot; : &quot;hubdbtable&quot;,
+  &quot;default&quot; : &quot;table-id&quot;
+}
+</code></pre>
+<h3><a id="Simple_Menu_283"></a>Simple Menu</h3>
+<p>Allows creation of a local simple menu.</p>
+<pre><code>{
+    &quot;id&quot;: &quot;&quot;,
+    &quot;name&quot;: &quot;&quot;,
+    &quot;label&quot;: &quot;&quot;,
+
+    &quot;type&quot;: &quot;simplemenu&quot;,
+    &quot;default&quot;: [
+    {
+        &quot;isPublished&quot;: false,
+        &quot;pageLinkId&quot;: null,
+        &quot;pageLinkName&quot;: null,
+        &quot;isDeleted&quot;: null,
+        &quot;categoryId&quot;: null,
+        &quot;subCategory&quot;: null,
+        &quot;contentType&quot;: null,
+        &quot;state&quot;: null,
+        &quot;linkLabel&quot;: &quot;Link Level 1&quot;,
+        &quot;linkUrl&quot;: null,
+        &quot;linkParams&quot;: null,
+        &quot;linkTarget&quot;: null,
+        &quot;type&quot;: &quot;PAGE_LINK&quot;,
+        &quot;children&quot;: [{
+            &quot;isPublished&quot;: false,
+            &quot;pageLinkId&quot;: null,
+            &quot;pageLinkName&quot;: null,
+            &quot;isDeleted&quot;: null,
+            &quot;categoryId&quot;: null,
+            &quot;subCategory&quot;: null,
+            &quot;contentType&quot;: null,
+            &quot;state&quot;: null,
+            &quot;linkLabel&quot;: &quot;Link Level 2&quot;,
+            &quot;linkUrl&quot;: null,
+            &quot;linkParams&quot;: null,
+            &quot;linkTarget&quot;: null,
+            &quot;type&quot;: &quot;PAGE_LINK&quot;,
+            &quot;children&quot;: []
+        }]
+    }, {
+        &quot;isPublished&quot;: false,
+        &quot;pageLinkId&quot;: null,
+        &quot;pageLinkName&quot;: null,
+        &quot;isDeleted&quot;: null,
+        &quot;categoryId&quot;: null,
+        &quot;subCategory&quot;: null,
+        &quot;contentType&quot;: null,
+        &quot;state&quot;: null,
+        &quot;linkLabel&quot;: &quot;Link Level 1&quot;,
+        &quot;linkUrl&quot;: null,
+        &quot;linkParams&quot;: null,
+        &quot;linkTarget&quot;: null,
+        &quot;type&quot;: &quot;PAGE_LINK&quot;,
+        &quot;children&quot;: []
+    }]
+}
+</code></pre>
+<h3><a id="Menu_342"></a>Menu</h3>
+<p>Selects a menu from the portal’s menu.</p>
+<pre><code>{
+    &quot;id&quot; : &quot;&quot;,
+    &quot;name&quot; : &quot;&quot;,
+    &quot;label&quot; : &quot;&quot;,
+    &quot;type&quot; : &quot;menu&quot;,
+    &quot;default&quot; : null
+}
+</code></pre>
+<h3><a id="Logo_354"></a>Logo</h3>
+<p>Allows selection of a logo</p>
+<ul>
+<li><code>&quot;override_inherited_src&quot; : false</code></li>
+<li><code>&quot;override_inherited_src&quot; : true</code></li>
+</ul>
+<pre><code>{
+    &quot;id&quot; : &quot;&quot;,
+    &quot;name&quot; : &quot;&quot;,
+    &quot;label&quot; : &quot;&quot;,
+    &quot;resizable&quot; : true,
+    &quot;type&quot; : &quot;logo&quot;,
+    &quot;default&quot; : {
+        &quot;override_inherited_src&quot; : false,
+        &quot;src&quot; : null,
+        &quot;alt&quot; : null
+    }
+}
+</code></pre>
+<h3><a id="Icon_373"></a>Icon</h3>
+<p>Allows selection of an icon</p>
+<pre><code>{
+    &quot;id&quot; : &quot;&quot;,
+    &quot;name&quot; : &quot;&quot;,
+    &quot;label&quot; : &quot;&quot;,
+    &quot;type&quot; : &quot;icon&quot;,
+    &quot;default&quot; : {
+        &quot;name&quot; : &quot;facebook&quot;,
+        &quot;unicode&quot; : &quot;f09a&quot;,
+        &quot;type&quot; : &quot;REGULAR&quot;
+    }
+}
+</code></pre>
+<h3><a id="Field_options_389"></a>Field options</h3>
+<p>Modules now include validation, editor options, and display conditions as well as repeating and grouping functionality.</p>
+<h4><a id="Regex_392"></a>Regex</h4>
+<p><strong>Use a regular expression to validate a field</strong><br>
+<code>&quot;validation_regex&quot; : &quot;/.+\@.+\..+/&quot;</code></p>
+<h4><a id="Editor_Options_396"></a>Editor Options</h4>
+<p><strong>Make this field required</strong><br>
+User will not be able to leave this field blank.<br>
+<code>&quot;required&quot; : false,</code></p>
+<p><strong>Prevent editing in content editors</strong><br>
+Allows you to have content that is hidden and uneditable by end users<br>
+<code>&quot;locked&quot; : false,</code></p>
+<p><strong>Help text</strong><br>
+Add helper text to give users context or instruction.<br>
+<code>&quot;help_text&quot;: &quot;Your help text&quot;,</code></p>
+<p><strong>Display conditions</strong><br>
+Display if another feild meets certain criteria. A set field ID is required<br>
+Operator Options:</p>
+<ul>
+<li>Is equal to - <code>&quot;operator&quot; : &quot;EQUAL&quot;</code></li>
+<li>Is empty - <code>&quot;operator&quot; : &quot;EMPTY&quot;</code></li>
+<li>Is not empty - <code>&quot;operator&quot; : &quot;NOT_EMPTY&quot;</code></li>
+<li>Is not equal to - <code>&quot;operator&quot; : &quot;NOT_EQUAL&quot;</code></li>
+<li>Custom regex - <code>&quot;operator&quot; : &quot;MATCHES_REGEX&quot;</code></li>
+</ul>
+<pre><code>&quot;visibility&quot; : {
+    &quot;controlling_field&quot; : &quot;field-id&quot;,
+    &quot;controlling_value_regex&quot; : null,
+    &quot;operator&quot; : &quot;NOT_EMPTY&quot;
+  },
+</code></pre>
+<p><strong>Field grouping</strong><br>
+Group indiviual fields into one group, <strong>Note:</strong> groups must have a set <code>id</code> to fuction properly</p>
+<pre><code>{
+    {
+    &quot;id&quot;: 1,
+    &quot;label&quot;: &quot;&quot;,
+    &quot;name&quot;: &quot;&quot;,
+    &quot;type&quot;: &quot;group&quot;,
+    &quot;occurrence&quot;: {
+        &quot;min&quot; : 1,
+        &quot;max&quot; : 10,
+        &quot;sorting_label_field&quot; : &quot;field-id&quot;,
+        &quot;default&quot; : 5
+    },
+    &quot;children&quot;: [
+        {
+            &quot;default&quot;: &quot;&quot;,
+            &quot;label&quot;: &quot;Text&quot;,
+            &quot;name&quot;: &quot;text&quot;,
+            &quot;type&quot;: &quot;text&quot;
+        },
+        {
+            &quot;default&quot;: &quot;&quot;,
+            &quot;label&quot;: &quot;Rich Text&quot;,
+            &quot;name&quot;: &quot;richtext&quot;,
+            &quot;type&quot;: &quot;richtext&quot;
+        }
+    ],
+    &quot;default&quot;: [
+        {
+            &quot;text&quot;: &quot;&quot;,
+            &quot;link&quot;: &quot;&quot;
+        },
+        {
+            &quot;text&quot;: &quot;&quot;,
+            &quot;link&quot;: &quot;&quot;
+        }
+    ]
+}
+</code></pre>
+<p><strong>Field repeating</strong><br>
+All feilds/groups can be repeaters, Groups that are repeaters can use a Sorting Label by adding <code>&quot;sorting_label_field&quot; : &quot;field-id&quot;,</code></p>
+<pre><code>&quot;occurrence&quot; : {
+    &quot;min&quot; : 1,
+    &quot;max&quot; : 10,
+    &quot;default&quot; : 1
+}
+</code></pre>
+<p><strong>Moduel Meta Fields</strong></p>
+<pre><code>{
+    &quot;custom_module&quot;: {
+        &quot;author&quot;: &quot;YOUR_EMAIL&quot;,
+        &quot;name&quot;: &quot;MODULE_NAME&quot;,
+        &quot;css_assets&quot;: [ ],
+        &quot;editable_contexts&quot;: [ ],
+        &quot;external_js&quot;: [ ],
+        &quot;host_template_types&quot; : [ &quot;PAGE&quot;, &quot;BLOG_POST&quot;, &quot;BLOG_LISTING&quot; ],
+        &quot;js_assets&quot;: [ ],
+        &quot;other_assets&quot;: [ ],
+        &quot;fields&quot;: [{
+                &quot;default&quot;: &quot;&quot;,
+                &quot;label&quot;: &quot;&quot;,
+                &quot;name&quot;: &quot;&quot;,
+                &quot;type&quot;: &quot;&quot;
+            }
+        ],
+        &quot;source&quot;: &quot;&quot;,
+        &quot;widgetLabel&quot;: &quot;MODULE_VERSION&quot;
+    },
+    &quot;custom_module_template&quot;: &quot;MODULE_TEMPLATE&quot;,
+    &quot;files&quot;: []
+}
+</code></pre>
+<p><strong>Adding File</strong></p>
+<pre><code>&quot;files&quot;: [{
+    &quot;file&quot;: &quot;&quot;,
+    &quot;folder_paths&quot;: &quot;&quot;
+}]
+</code></pre>
