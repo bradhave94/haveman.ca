@@ -1068,11 +1068,15 @@
                     <div class="col-md-6">
                         <h3 class="font-family-alt letter-spacing-2 title-large text-uppercase">Shoot Me a Message</h3>
 
-                        <form action="https://submit-form.com/098e288c-2bb9-4dd0-b838-97ae16aaf340" method="POST" id="contact-form" class="contact-form margin-9 no-margin-bottom no-margin-rl">
-                            <input required type="text" placeholder="* Your Name" name="name" id="name" class="required">
-                            <input required type="text" placeholder="* Your Email" name="email" id="email" class="required email">
-                            <textarea required placeholder="* Your Message" name="message" id="message" class="required"></textarea>
-                            <button id="submit" type="submit" class="btn btn-medium background-black text-white">Send Message</button>
+                        <form action="https://submit-form.com/098e288c-2bb9-4dd0-b838-97ae16aaf340" target="_self">
+                           <!-- Prevent spam without a captcha -->
+                           <input type="checkbox" name="_honeypot" style="display: none" tabindex="-1" autocomplete="off">
+                           <!-- All elements must have a name attribute -->
+                           <input type="text" name="subject" placeholder="Subject">
+                           <textarea name="message" placeholder="Message"></textarea>
+                           <input type="text" name="email" placeholder="Your email">
+                           <!-- A button of type submit -->
+                           <button type="submit">Submit</button>
                         </form>
                     </div>
                     <!-- //.col-md-6 -->
