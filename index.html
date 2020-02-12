@@ -1,1194 +1,627 @@
-<!doctype html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9" lang="en"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<!DOCTYPE html>
+<html lang="zxx" class="no-js">
 
-<head>
-    <meta charset="utf-8">
-    <title>Bradley Haveman - Web Developer and Programmer</title>
-    <meta name="description" content="Bradley Haveman is a experienced Web Developer with a history of working in the marketing and advertising industry. Skilled in HTML/CSS, JavaScript, jQuery, PHP, SEO, HubSpot, WordPress and more. Bradley Haveman has a Advanced Diploma in Computer Programmer Analytics focused in Computer Science."/>
-    <meta name="keywords" content="bradley, haveman, bradley haveman, portfolio, css, html, hubspot, wordpress, php"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <head>
 
-    <!-- Loading Bootstrap CSS -->
-    <link rel="preload" href="assets/plugins/bootstrap/css/bootstrap.min.css" as="style" onload="this.rel='stylesheet'">
+    	<!-- Metas -->
+        <meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+		<meta name="keywords" content="bradley, haveman, bradley haveman, portfolio, css, html, hubspot, wordpress, php" />
+		<meta name="description" content="Bradley Haveman is a experienced Web Developer with a history of working in the marketing and advertising industry. Skilled in HTML/CSS, JavaScript, jQuery, PHP, SEO, HubSpot, WordPress and more. Bradley Haveman has a Advanced Diploma in Computer Programmer Analytics focused in Computer Science." />
+		<meta name="author" content="Bradley Haveman" />
 
-    <!-- Loading Font Icons -->
-    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
+		<!-- Title  -->
+		<title>Bradley Haveman - Web Developer and Programmer</title>
 
-    <!-- Include all css plugins (below), or include individual files as needed -->
-    <link rel="preload" href="assets/plugins/animate-css/animate.min.css" as="style" onload="this.rel='stylesheet'">
-    <link rel="preload" href="assets/plugins/magnific-popup/magnific-popup.css" as="style" onload="this.rel='stylesheet'">
-    <link rel="preload" href="assets/plugins/flexslider/flexslider.css" as="style" onload="this.rel='stylesheet'">
-    <link rel="preload" href="assets/plugins/chartist-js/chartist.min.css" as="style" onload="this.rel='stylesheet'">
-    <link rel="preload" href="assets/plugins/flickity/flickity.min.css" as="style" onload="this.rel='stylesheet'">
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="img/favicon.png" />
 
-    <!-- Main CSS -->
-    <link rel="preload" href="assets/css/styles.min.css" as="style" onload="this.rel='stylesheet'">
+		<!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Dosis:300,400,500,600,700,800" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700,800" rel="stylesheet">
 
-    <!-- favicon -->
-    <link rel="shortcut icon" type="image/png" href="assets/images/favicon.png"/>
+		<!-- Plugins -->
+		<link rel="stylesheet" href="css/plugins.css" />
 
-    <!-- Modernizr JS for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 8]>
-    <script src="assets/plugins/modernizr/modernizr.min.js"></script>
-    <![endif]-->
-    
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-62190812-4"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+        <!-- Core Style Css -->
+        <link rel="stylesheet" href="css/style.css" />
 
-      gtag('config', 'UA-62190812-4');
-    </script>
+        <script src="js/modernizr-custom.js"></script>
 
-</head>
+    </head>
 
-<body id="page-top">
-    <!--[if lt IE 8]>
-        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
+    <body>
 
-    <!-- PRELOADER START -->
-    <div class="pace-preloader background-gray-light-2 height-100 position-fixed width-100 z-index-1000"></div>
-    <!-- //PRELOADER END -->
 
-    <!-- BORDER SITE START -->
-    <div class="border-site bs-top"></div>
-    <div class="border-site bs-right"></div>
-    <div class="border-site bs-left"></div>
-    <div class="border-site bs-bottom"></div>
-    <!-- //BORDER SITE END -->
+        <!-- =====================================
+        ==== Start Loading -->
 
-    <!-- NAV TRIGGER START -->
-    <div class="nav-trigger nav-trigger-open">
-        <div class="nav-toggle">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-        <!-- //.nav-toggle -->
-    </div>
-    <!-- //NAV TRIGGER END -->
-
-    <!-- NAVIGATION START -->
-    <nav id="navigation" class="navbar navbar-fixed-top">
-        <div class="container-fluid display-table height-100 width-100">
-            <div class="display-table-cell vertical-align-middle width-100">
-                <div class="nav-trigger nav-trigger-close">
-                    <span></span>
-                    <span></span>
-                </div>
-                <!-- //.nav-trigger -->
-
-                <ul class="nav navbar-nav font-family-alt text-extra-large text-uppercase">
-                    <li class="page-scroll">
-                        <a href="#hero">Home</a>
-                    </li>
-
-                    <li class="page-scroll">
-                        <a href="#introduction">Introduction</a>
-                    </li>
-
-                    <li class="page-scroll">
-                        <a href="#profile">Profile</a>
-                    </li>
-
-                    <li class="page-scroll">
-                        <a href="#collaboration">Collaboration</a>
-                    </li>
-
-                    <li class="page-scroll">
-                        <a href="#project">Projects</a>
-                    </li>
-
-                    <li class="page-scroll">
-                        <a href="#studio">My Studio</a>
-                    </li>
-                    
-                    <li class="page-scroll">
-                        <a href="#testimonial">Testimonials</a>
-                    </li>
-
-                    <li class="page-scroll">
-                        <a href="#contact">Contact</a>
-                    </li>
-                </ul>
-                <!-- //.navbar-nav -->
-
-                <div class="nav-social no-padding-rl no-padding-bottom padding-15">
-                    <div class="inner-content">
-                        
-                        <ul class="list-unstyled list-inline font-family-alt no-letter-spacing text-extra-large">
-                            <li><a target="_blank" href="https://github.com/bradhave94"><i class="fab fa-github"></i></a></li>
-                            <li><a target="_blank" href="https://www.linkedin.com/in/bradley-haveman/"><i class="fab fa-linkedin"></i></a></li>
-                            <li><a target="_blank" href="https://twitter.com/bradleyhaveman"><i class="fab fa-twitter"></i></a></li>
-                        </ul>
-                        
-                        <span class="display-inline-block font-family-alt text-large">
-                            <a href="mailto:bradley@haveman.ca">bradley@haveman.ca</a>
-                        </span>
-                    </div>
-                    <!-- //.inner-content -->
-                </div>
-                <!-- //.nav-social -->
+        <div class="loading valign text-center">
+            <div class="full-width">
+                <img src="img/loading.svg" alt="">
             </div>
-            <!-- //.display-table-cell -->
         </div>
-        <!-- //.container-fluid -->
-    </nav>
-    <!-- //NAVIGATION END -->
 
-    <!-- BACKGROUND GRID START -->
-    <div class="background-grid">
-        <div class="column"></div>
-        <div class="column"></div>
-        <div class="column"></div>
-        <div class="column"></div>
-        <div class="column"></div>
-        <div class="column"></div>
-    </div>
-    <!-- //BACKGROUND GRID END -->
+        <!-- End Loading ====
+        ======================================= -->
 
-    <!-- SECTION - HERO START -->
-    <section id="hero" class="section hero background-cover background-gray background-position-center height-100 no-padding-tb">
-        <div class="section-content display-table width-100 height-100">
-            <div class="container display-table-cell vertical-align-middle text-center">
-                <div class="skrollable skrollable-between" data-0="opacity: 1; transform: translate3d(0px, 0px, 0px);" data-top-bottom="opacity: 0; transform: translate3d(0px, 300%, 0px);">
+
+
+       <!-- =====================================
+        ==== Start Navbar -->
+        
+    	<nav class="pages-nav">
+            <div class="pages-nav__item nav__list-item"><a class="link link--page hover-target" href="#page-home">Home</a></div>
+            <div class="pages-nav__item nav__list-item"><a class="link link--page hover-target" href="#page-about">About</a></div>
+            <div class="pages-nav__item nav__list-item"><a class="link link--page hover-target" href="#page-resume">Resume</a></div>
+            <div class="pages-nav__item nav__list-item"><a class="link link--page hover-target" href="#page-work">Portfolio</a></div>
+            <div class="pages-nav__item nav__list-item"><a class="link link--page hover-target" href="#page-contact">Contact</a></div>
+        </nav>
+
+        <!-- End Navbar ====
+        ======================================= -->
+
+
+
+        <!-- =====================================
+        ==== Start pages-stack -->
+        
+        <div class="pages-stack">
+
+            <!-- Home -->
+            <div class="page home" id="page-home">
+                <div class="container-fluid">
                     <div class="row">
-                        <div class="col-md-12">
-                            <div class="hero-title display-inline-block position-relative">
-                                <span>welcome</span>
 
-                                <h1 class="font-family-alt title-extra-large-4">
-                                    Hello I am <span class="text-color">Bradley Haveman</span>
-                                </h1>
+                        <div class="col-md-4">
+                            <div class="img valign">
+                                <div class="pattern">
+                                    <img src="img/hero.jpg" alt="">
+                                </div>
                             </div>
-                            <!-- //.hero-title -->
                         </div>
-                        <!-- //.col-md-12 -->
-                    </div>
-                    <!-- //.row -->
+                        <div class="col-md-8">
+                            <div class="content section-padding valign">
+                                <div class="caption">
+                                    <h6>Hey There!</h6>
+                                    <h1>Bradley Haveman</h1>
+                                    <p>I'm Bradley - a passionate developer living in Ontario, Canada. I specialize in creating beautiful websites <br>and making sure they are highly functional for their clients.</p>
+                                    <div class="social">
+                                        <a target="_blank" href="https://twitter.com/bradleyhaveman" class="icon">
+                                            <i class="fab fa-twitter"></i>
+                                        </a>
+                                        <a target="_blank" href="https://www.linkedin.com/in/bradley-haveman/" class="icon">
+                                            <i class="fab fa-linkedin-in"></i>
+                                        </a>
+                                        <a target="_blank" href="https://github.com/bradhave94/" class="icon">
+                                            <i class="fab fa-github"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
+                    </div>
+                </div>
+            </div>
+            <!-- /Home -->
+
+            <!-- About -->
+            <div class="page about" id="page-about">
+                <div class="container-fluid">
                     <div class="row">
-                        <div class="col-xs-10 col-xs-offset-1 col-md-8 col-md-offset-2">
-                            <div class="text-rotator margin-1 no-margin-rl">
-                                <div class="text-rotator-item">
-                                    <div class="item active">
-                                        <span class="font-family-alt padding-1-5 no-padding-tb text-uppercase title-extra-large-2">
-                                            Developer
-                                        </span>
-                                    </div>
-                                    <!-- //.item -->
 
-                                    <div class="item">
-                                        <span class="font-family-alt padding-1-5 no-padding-tb text-uppercase title-extra-large-2">
-                                            Programmer
-                                        </span>
-                                    </div>
-                                    <!-- //.item -->
+                        <div class="col-lg-7">
+                            <div class="content section-padding">
 
-                                    <div class="item">
-                                        <span class="font-family-alt padding-1-5 no-padding-tb text-uppercase title-extra-large-2">
-                                            Techy
-                                        </span>
-                                    </div>
-                                    <!-- //.item -->
+                                <div class="section-head">
+                                    <h5><span>A</span>bout Me</h5>
+                                    <h3>About</h3>
                                 </div>
-                                <!-- //.text-rotator-item -->
-                            </div>
-                            <!-- //.text-rotator -->
-                        </div>
-                        <!-- //.col-xs-10 -->
-                    </div>
-                    <!-- //.row -->
-                </div>
-                <!-- //.skrollable -->
-            </div>
-            <!-- //.container -->
-        </div>
-        <!-- //.section-content -->
-
-        <div class="scroll-down skrollable skrollable-between width-100" data-0="opacity: 1; transform: translate3d(0px, 0px, 0px);" data-top-bottom="opacity: 0; transform: translate3d(0px, 300%, 0px);">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="page-scroll text-center">
-                            <span class="display-block text-uppercase">Scroll Down</span>
-                            <a href="#introduction"><i class="fas fa-chevron-down icon-medium"></i></a>
-                        </div>
-                        <!-- //.page-scroll -->
-                    </div>
-                    <!-- //.col-md-12 -->
-                </div>
-                <!-- //.row -->
-            </div>
-            <!-- //.container -->
-        </div>
-        <!-- //.scroll-down -->
-    </section>
-    <!-- //SECTION - HERO END -->
-
-    <!-- SECTION - INTRODUCTION START -->
-    <section id="introduction" class="section background-gray-light no-padding-bottom">
-        <div class="section-content">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <h3 class="section-title display-inline-block font-family-alt margin-4 no-margin-rl no-margin-top text-extra-large text-uppercase title-underline">
-                            Introduction
-                        </h3>
-
-                        <p class="font-weight-300 title-extra-large-3">
-                            I'm <span class="font-weight-400">Bradley</span> - a passionate <span class="text-highlight">developer</span> living in Ontario, Canada.
-                            I <span class="font-weight-400">specialize</span> in creating beautiful <span class="text-highlight">websites</span> and making sure they are highly <span class="font-weight-400">functional</span> for their <span class="font-weight-400">clients</span>.
-                        </p>
-                    </div>
-                    <!-- //.col-md-12 -->
-                </div>
-                <!-- //.row -->
-            </div>
-            <!-- //.container -->
-        </div>
-        <!-- //.section-content -->
-    </section>
-    <!-- //SECTION - INTRODUCTION END -->
-
-    <!-- SECTION - PROFILE START -->
-    <section id="profile" class="section background-gray-light no-padding-bottom">
-        <div class="section-content">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-6 col-sm-offset-3">
-                        <div class="profile">
-                            <div class="profile-image">
-                                <img src="assets/images/profile.jpg" alt="Bradley Haveman" class="img-responsive"/>
-
-                                <div class="profile-btn-download">
-                                    <a target="_blank" href="/assets/resume.pdf" class="btn btn-medium background-color font-family-alt text-large text-uppercase text-white">
-                                        <i class="icon-File-Download font-weight-700"></i> Download Resume
-                                    </a>
-                                </div>
-                                <!-- //.profile-btn-download -->
-                            </div>
-                            <!-- //.profile-image -->
-
-                            <div class="profile-description">
-                                <div class="item display-table text-right">
-                                    <span class="circle on-right"></span>
-
-                                    <div class="display-table-cell">
-                                        <h5 class="font-weight-400 text-extra-large">Idea maker, visionary,<br>creative genius.</h5>
-                                    </div>
-                                    <!-- //.display-table-cell -->
-                                </div>
-                                <!-- //.item -->
-
-                                <div class="item display-table text-left">
-                                    <span class="circle on-left"></span>
-
-                                    <div class="display-table-cell">
-                                        <h5 class="font-weight-400 text-extra-large">Forward-thinking<br>and ambitious.</h5>
-                                    </div>
-                                    <!-- //.display-table-cell -->
-                                </div>
-                                <!-- //.item -->
-
-                                <div class="item display-table text-left">
-                                    <span class="circle on-left"></span>
-
-                                    <div class="display-table-cell">
-                                        <h5 class="font-weight-400 text-extra-large">Trustworthly,<br>and exceptional communicator.</h5>
-                                    </div>
-                                    <!-- //.display-table-cell -->
-                                </div>
-                                <!-- //.item -->
-                            </div>
-                            <!-- //.profile-description -->
-                        </div>
-                        <!-- //.profile -->
-                    </div>
-                    <!-- //.col-sm-6 -->
-                </div>
-                <!-- //.row -->
-
-                <div class="profile-chart margin-9 no-margin-bottom no-margin-rl">
-                    <div class="row">
-                        <div class="item col-xs-12 col-sm-3">
-                            <span class="font-family-alt text-uppercase">Honest</span>
-                        </div>
-                        <!-- //.item -->
-
-                        <div class="item col-xs-12 col-sm-3">
-                            <span class="font-family-alt text-uppercase">Optimistic</span>
-                        </div>
-                        <!-- //.item -->
-
-                        <div class="item col-xs-12 col-sm-3">
-                            <span class="font-family-alt text-uppercase">Hard Working</span>
-                        </div>
-                        <!-- //.item -->
-
-                        <div class="item col-xs-12 col-sm-3">
-                            <span class="font-family-alt text-uppercase">Nerd</span>
-                        </div>
-                        <!-- //.item -->
-                    </div>
-                    <!-- //.row -->
-                </div>
-                <!-- //.profile-chart -->
-            </div>
-            <!-- //.container -->
-        </div>
-        <!-- //.section-content -->
-    </section>
-    <!-- //SECTION - PROFILE END -->
-
-    <!-- SECTION - COLLABORATION START -->
-    <section id="collaboration" class="section background-gray-light no-padding-bottom">
-        <div class="section-content">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <h3 class="section-title display-inline-block font-family-alt margin-4 no-margin-rl no-margin-top text-extra-large text-uppercase title-underline">
-                            Collaboration
-                        </h3>
-
-                        <p class="font-weight-300 title-extra-large-3">
-                            I'm always <span class="text-highlight">excited</span> to hear about <span class="font-weight-400">new</span> <span class="text-highlight">ideas</span> and <span class="font-weight-400">collaborations.</span>
-                        </p>
-
-                        <p class="font-weight-300 margin-3-5 no-margin-bottom no-margin-rl title-extra-large-3">
-                            <span class="font-weight-400">Shoot</span> me an <span class="text-highlight">email</span> I'd love to <span class="font-weight-400">chat!</span>
-                        </p>
-
-                    </div>
-                    <!-- //.col-md-12 -->
-                </div>
-                <!-- //.row -->
-            </div>
-            <!-- //.container -->
-        </div>
-        <!-- //.section-content -->
-    </section>
-    <!-- //SECTION - COLLABORATION END -->
-
-    <!-- SECTION - PROJECTS START -->
-    <section id="project" class="section background-gray-light no-padding-bottom">
-        <div class="section-content">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <h3 class="section-title display-inline-block font-family-alt margin-4 no-margin-rl no-margin-top text-extra-large text-uppercase title-underline">
-                            Selected Projects
-                        </h3>
-                    </div>
-                    <!-- //.col-md-12 -->
-                </div>
-                <!-- //.row -->
-
-                <div class="row">
-
-                    <div class="col-md-12">
-                        <div class="projects background-gray-light width-100">
-                            <!-- Project Item Start -->
-                            <div class="item frontend backend"
-                                data-project-title="New Website"
-                                data-project-about="Took a coded HTML template and turned it into HubSpot templates and custom modules"
-                                data-project-img="assets/images/projects/06.jpg"
-                                data-project-link="https://www.zoola.io/">
-
-                                <span class="hover-bg"></span>
-
-                                <div class="row width-100">
-                                    <div class="item-col col-xs-9 col-sm-6">
-                                        <span class="display-block font-family-alt text-small text-uppercase">
-                                            Project
-                                        </span>
-
-                                        <span class="display-inline-block font-weight-700 has-sideline text-small text-uppercase position-relative">
-                                            New Website
-                                        </span>
-                                    </div>
-                                    <!-- //.item-col -->
-
-                                    <div class="item-col col-sm-4 hidden-xs">
-                                        <span class="display-block font-family-alt text-small text-uppercase">
-                                            Client
-                                        </span>
-
-                                        <span class="display-inline-block font-weight-700 has-sideline text-small text-uppercase position-relative">
-                                             Lambda Solutions
-                                        </span>
-                                    </div>
-                                    <!-- //.item-col -->
-
-                                    <div class="item-col col-xs-3 col-sm-2 text-right">
-                                        <span class="display-block font-family-alt text-small text-uppercase">
-                                            Y-2018
-                                        </span>
-
-                                        <span class="display-inline-block font-weight-700 has-sideline text-small text-uppercase position-relative">
-                                            April
-                                        </span>
-                                    </div>
-                                    <!-- //.item-col -->
-                                </div>
-                                <!-- //.row -->
-                            </div>
-                            <!-- //.item -->
-                            
-                            <!-- Project Item Start -->
-                            <div class="item frontend backend"
-                                data-project-title="Website Redesign"
-                                data-project-about="Created a custom responsive HubSpot website."
-                                data-project-img="assets/images/projects/05.jpg"
-                                data-project-link="https://www.socialnetworkelite.com/">
-
-                                <span class="hover-bg"></span>
-
-                                <div class="row width-100">
-                                    <div class="item-col col-xs-9 col-sm-6">
-                                        <span class="display-block font-family-alt text-small text-uppercase">
-                                            Project
-                                        </span>
-
-                                        <span class="display-inline-block font-weight-700 has-sideline text-small text-uppercase position-relative">
-                                            Website Redesign
-                                        </span>
-                                    </div>
-                                    <!-- //.item-col -->
-
-                                    <div class="item-col col-sm-4 hidden-xs">
-                                        <span class="display-block font-family-alt text-small text-uppercase">
-                                            Client
-                                        </span>
-
-                                        <span class="display-inline-block font-weight-700 has-sideline text-small text-uppercase position-relative">
-                                            Social Network Elite
-                                        </span>
-                                    </div>
-                                    <!-- //.item-col -->
-
-                                    <div class="item-col col-xs-3 col-sm-2 text-right">
-                                        <span class="display-block font-family-alt text-small text-uppercase">
-                                            Y-2018
-                                        </span>
-
-                                        <span class="display-inline-block font-weight-700 has-sideline text-small text-uppercase position-relative">
-                                            March
-                                        </span>
-                                    </div>
-                                    <!-- //.item-col -->
-                                </div>
-                                <!-- //.row -->
-                            </div>
-                            <!-- //.item -->
-
-                            <!-- Project Item Start -->
-                            <div class="item frontend backend"
-                                data-project-title="New Website"
-                                data-project-about="Created a new website for Midland Alliance Church. The site is built in WordPress and utilizes a few plugin for expanded functionality."
-                                data-project-img="assets/images/projects/01.jpg"
-                                data-project-link="http://machurch.ca/">
-
-                                <span class="hover-bg"></span>
-
-                                <div class="row width-100">
-                                    <div class="item-col col-xs-9 col-sm-6">
-                                        <span class="display-block font-family-alt text-small text-uppercase">
-                                            Project
-                                        </span>
-
-                                        <span class="display-inline-block font-weight-700 has-sideline text-small text-uppercase position-relative">
-                                            New Website
-                                        </span>
-                                    </div>
-                                    <!-- //.item-col -->
-
-                                    <div class="item-col col-sm-4 hidden-xs">
-                                        <span class="display-block font-family-alt text-small text-uppercase">
-                                            Client
-                                        </span>
-
-                                        <span class="display-inline-block font-weight-700 has-sideline text-small text-uppercase position-relative">
-                                            Midnland Alliance Church
-                                        </span>
-                                    </div>
-                                    <!-- //.item-col -->
-
-                                    <div class="item-col col-xs-3 col-sm-2 text-right">
-                                        <span class="display-block font-family-alt text-small text-uppercase">
-                                            Y-2017
-                                        </span>
-
-                                        <span class="display-inline-block font-weight-700 has-sideline text-small text-uppercase position-relative">
-                                            Jul
-                                        </span>
-                                    </div>
-                                    <!-- //.item-col -->
-                                </div>
-                                <!-- //.row -->
-                            </div>
-                            <!-- //.item -->
-
-                            <div class="item frontend backend database"
-                                data-project-title="Telus Coaching App"
-                                data-project-about="Worked collaboratively with a team to develop a app for a local Telus Store. Technologies Used: Node.js, Exspress, MySQL, ES6, JavaScript, Boostrap, Jade, HTML, CSS."
-                                data-project-img="assets/images/projects/02.jpg"
-                                data-project-link="https://prod-telus.rhcloud.com/app">
-
-                                <span class="hover-bg"></span>
-
-                                <div class="row width-100">
-                                    <div class="item-col col-xs-9 col-sm-6">
-                                        <span class="display-block font-family-alt text-small text-uppercase">
-                                            Personal Project
-                                        </span>
-
-                                        <span class="display-inline-block font-weight-700 has-sideline text-small text-uppercase position-relative">
-                                            Telus Coaching App
-                                        </span>
-                                    </div>
-                                    <!-- //.item-col -->
-
-                                    <div class="item-col col-sm-4 hidden-xs">
-                                        <span class="display-block font-family-alt text-small text-uppercase">
-                                            Client
-                                        </span>
-
-                                        <span class="display-inline-block font-weight-700 has-sideline text-small text-uppercase position-relative">
-                                            Personal Project
-                                        </span>
-                                    </div>
-                                    <!-- //.item-col -->
-
-                                    <div class="item-col col-xs-3 col-sm-2 text-right">
-                                        <span class="display-block font-family-alt text-small text-uppercase">
-                                            Y-2016
-                                        </span>
-
-                                        <span class="display-inline-block font-weight-700 has-sideline text-small text-uppercase position-relative">
-                                            Aug
-                                        </span>
-                                    </div>
-                                    <!-- //.item-col -->
-                                </div>
-                                <!-- //.row -->
-                            </div>
-                            <!-- //.item -->
-
-                            <!-- Project Item Start -->
-                            <div class="item frontend backend"
-                                data-project-title="New Website"
-                                data-project-about="Designed and developed a new site for  Ironstone Entrance Technologies Inc. using WordPress."
-                                data-project-img="assets/images/projects/03.jpg"
-                                data-project-link="http://www.ietinc.ca/">
-
-                                <span class="hover-bg"></span>
-
-                                <div class="row width-100">
-                                    <div class="item-col col-xs-9 col-sm-6">
-                                        <span class="display-block font-family-alt text-small text-uppercase">
-                                            Project
-                                        </span>
-
-                                        <span class="display-inline-block font-weight-700 has-sideline text-small text-uppercase position-relative">
-                                            New Website
-                                        </span>
-                                    </div>
-                                    <!-- //.item-col -->
-
-                                    <div class="item-col col-sm-4 hidden-xs">
-                                        <span class="display-block font-family-alt text-small text-uppercase">
-                                            Client
-                                        </span>
-
-                                        <span class="display-inline-block font-weight-700 has-sideline text-small text-uppercase position-relative">
-                                            Ironstone Entrance Technologies Inc.
-                                        </span>
-                                    </div>
-                                    <!-- //.item-col -->
-
-                                    <div class="item-col col-xs-3 col-sm-2 text-right">
-                                        <span class="display-block font-family-alt text-small text-uppercase">
-                                            Y-2016
-                                        </span>
-
-                                        <span class="display-inline-block font-weight-700 has-sideline text-small text-uppercase position-relative">
-                                            November
-                                        </span>
-                                    </div>
-                                    <!-- //.item-col -->
-                                </div>
-                                <!-- //.row -->
-                            </div>
-                            <!-- //.item -->
-
-                            <!-- Project Item Start -->
-                            <div class="item frontend backend"
-                                data-project-title="Symbol 2 Clipboard"
-                                data-project-about="Was looking for a place to find common symbols, but came up empty. So I developed a simple Chrome extension that copies symbols to your clipboard."
-                                data-project-img="assets/images/projects/04.jpg"
-                                data-project-link="https://chrome.google.com/webstore/detail/symbol-2-clipboard/bfeejloklpgplmhehbmoenmgkjboifbi">
-
-                                <span class="hover-bg"></span>
-
-                                <div class="row width-100">
-                                    <div class="item-col col-xs-9 col-sm-6">
-                                        <span class="display-block font-family-alt text-small text-uppercase">
-                                            Chrome Extension
-                                        </span>
-
-                                        <span class="display-inline-block font-weight-700 has-sideline text-small text-uppercase position-relative">
-                                            Symbol 2 Clipboard
-                                        </span>
-                                    </div>
-                                    <!-- //.item-col -->
-
-                                    <div class="item-col col-sm-4 hidden-xs">
-                                        <span class="display-block font-family-alt text-small text-uppercase">
-                                            Client
-                                        </span>
-
-                                        <span class="display-inline-block font-weight-700 has-sideline text-small text-uppercase position-relative">
-                                            Personal Project
-                                        </span>
-                                    </div>
-                                    <!-- //.item-col -->
-
-                                    <div class="item-col col-xs-3 col-sm-2 text-right">
-                                        <span class="display-block font-family-alt text-small text-uppercase">
-                                            Y-2017
-                                        </span>
-
-                                        <span class="display-inline-block font-weight-700 has-sideline text-small text-uppercase position-relative">
-                                            April
-                                        </span>
-                                    </div>
-                                    <!-- //.item-col -->
-                                </div>
-                                <!-- //.row -->
-                            </div>
-                            <!-- //.item -->
-                        </div>
-                        <!-- //.projects -->
-                    </div>
-                    <!-- //.col-md-9 -->
-                </div>
-                <!-- //.row -->
-            </div>
-            <!-- //.container -->
-        </div>
-        <!-- //.section-content -->
-    </section>
-    <!-- //SECTION - PROJECTS END -->
-
-    <!-- SECTION - SERVICES START -->
-    <section id="services" class="section background-gray-light no-padding-bottom">
-        <div class="section-content">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-10 col-md-offset-1">
-                        <div class="text-center">
-                            <h3 class="section-title display-inline-block font-family-alt margin-4 no-margin-rl no-margin-top text-extra-large text-uppercase title-underline">
-                                What I Can Do
-                            </h3>
-                        </div>
-                        <!-- //.text-center -->
-                    </div>
-                    <!-- //.col-md-10 -->
-                </div>
-                <!-- //.row -->
-
-                <div class="row">
-                    <div class="col-md-10 col-md-offset-1">
-                        <div class="row">
-                            <div class="services-item col-sm-4">
-                                <div class="inner-content font-family-alt text-center">
-                                    <i class="fas fa-pencil-alt text-color title-extra-large-3"></i>
-
-                                    <span class="display-block text-medium text-uppercase">
-                                        Front-End <span class="font-weight-700">Development</span>
-                                    </span>
-                                </div>
-                                <!-- //.inner-content -->
-                            </div>
-                            <!-- //.services-item -->
-
-                            <div class="services-item col-sm-4">
-                                <div class="inner-content font-family-alt text-center">
-                                    <i class="fas fa-ruler-combined text-color title-extra-large-3"></i>
-                                    
-                                    <span class="display-block text-medium text-uppercase">
-                                        Back-End <span class="font-weight-700">Development</span>
-                                    </span>
-                                </div>
-                                <!-- //.inner-content -->
-                            </div>
-                            <!-- //.services-item -->
-
-                            <div class="services-item col-sm-4">
-                                <div class="inner-content font-family-alt text-center">
-                                    <i class="fas fa-code text-color title-extra-large-3"></i>
-
-                                    <span class="display-block text-medium text-uppercase">
-                                        Software <span class="font-weight-700">Programming</span>
-                                    </span>
-                                </div>
-                                <!-- //.inner-content -->
-                            </div>
-                            <!-- //.services-item -->
-
-                            <div class="services-item col-sm-4">
-                                <div class="inner-content font-family-alt text-center">
-                                    <i class="fas fa-mobile-alt text-color title-extra-large-3"></i>
-
-                                    <span class="display-block text-medium text-uppercase">
-                                        App <span class="font-weight-700">Development</span>
-                                    </span>
-                                </div>
-                                <!-- //.inner-content -->
-                            </div>
-                            <!-- //.services-item -->
-
-                            <div class="services-item col-sm-4">
-                                <div class="inner-content font-family-alt text-center">
-                                    <i class="fas fa-database text-color title-extra-large-3"></i>
-
-                                    <span class="display-block text-medium text-uppercase">
-                                        Database <span class="font-weight-700">Design</span>
-                                    </span>
-                                </div>
-                                <!-- //.inner-content -->
-                            </div>
-                            <!-- //.services-item -->
-
-                            <div class="services-item col-sm-4">
-                                <div class="inner-content font-family-alt text-center">
-                                    <i class="fas fa-user-cog text-color title-extra-large-3"></i>
-
-                                    <span class="display-block text-medium text-uppercase">
-                                        IT <span class="font-weight-700">Consulting</span>
-                                    </span>
-                                </div>
-                                <!-- //.inner-content -->
-                            </div>
-                            <!-- //.services-item -->
-                        </div>
-                        <!-- //.row -->
-                    </div>
-                    <!-- //.col-md-10 -->
-                </div>
-                <!-- //.row -->
-            </div>
-            <!-- //.container -->
-        </div>
-        <!-- //.section-content -->
-    </section>
-    <!-- //SECTION - SERVICES END -->
-
-    <!-- SECTION - STUDIO START -->
-    <section id="studio" class="section background-gray-light overflow-visible no-padding-bottom">
-        <div class="section-content">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <h3 class="section-title display-inline-block font-family-alt margin-4 no-margin-rl no-margin-top text-extra-large text-uppercase title-underline">
-                            My Studio
-                        </h3>
-                    </div>
-                    <!-- //.col-md-12 -->
-                </div>
-                <!-- //.row -->
-            </div>
-            <!-- //.container -->
-
-            <div class="gallery-carousel position-relative width-100">
-                
-                <div class="gallery-cell">
-                    <a href="https://www.zoola.io/" target="_blank" ><img src="assets/images/studio/07.jpg" alt="Zoola Analytics - Created by Bradley Haveman - HTML, JavaScript, CSS, HubSpot"/></a>
-                </div>
-                <!-- //.gallery-cell -->
-                
-                <div class="gallery-cell">
-                     <a href="https://www.socialnetworkelite.com/" target="_blank" ><img src="assets/images/studio/06.jpg" alt="Social Network Elite - Created by Bradley Haveman - HTML, JavaScript, CSS, HubSpot"/></a>
-                </div>
-                <!-- //.gallery-cell -->
-                
-                <div class="gallery-cell">
-                    <a href="http://machurch.ca/" target="_blank" ><img src="assets/images/studio/01.jpg" alt="Midland Alliance Church - Created by Bradley Haveman"/></a>
-                </div>
-                <!-- //.gallery-cell -->
-
-
-                <div class="gallery-cell">
-                    <a href="http://www.ietinc.ca/" target="_blank" ><img src="assets/images/studio/03.jpg" alt="Ironstone Entrance Technologies Inc - Created by Bradley Haveman - HTML, JavaScript, CSS, PHP, WordPress"/></a>
-                </div>
-                <!-- //.gallery-cell -->
-
-                <div class="gallery-cell">
-                    <a href="https://chrome.google.com/webstore/detail/symbol-2-clipboard/bfeejloklpgplmhehbmoenmgkjboifbi" target="_blank" ><img src="assets/images/studio/04.jpg" alt="Symbol 2 Clipboard - Created by Bradley Haveman"/></a>
-                </div>
-                <!-- //.gallery-cell -->
-
-                <div class="gallery-cell">
-                    <a><img src="assets/images/studio/05.jpg" alt="Telus Coaching App - HTML, JavaScript, ES6, CSS, Node.js, Express, MySQL"/></a>
-                </div>
-                <!-- //.gallery-cell -->
-
-                <div class="gallery-nav background-white opacity-9 position-absolute">
-                    <i class="fas fa-arrow-left nav-previous display-block text-center title-large position-absolute"></i>
-                    <i class="fas fa-arrow-right nav-next display-block text-center title-large position-absolute"></i>
-                </div>
-                <!-- //.gallery-nav -->
-            </div>
-            <!-- //.gallery-carousel -->
-        </div>
-        <!-- //.section-content -->
-    </section>
-    <!-- //SECTION - STUDIO END -->
-
-    <!-- SECTION - TESTIMONIAL START -->
-    <section id="testimonial" class="section background-gray-light no-padding-bottom">
-        <div class="text-center">
-            <h3 class="section-title display-inline-block font-family-alt margin-4 no-margin-rl no-margin-top text-extra-large text-uppercase title-underline">
-                Testimonials
-            </h3>
-        </div>
-        <div class="section-content">
-            <div class="testimonial-slider flexslider">
-                <div class="slides">
-
-                    <div class="item position-relative width-100">
-                        <div class="testimonial-image height-100 position-absolute">
-                            <img src="assets/images/testimonial/01.jpg" alt="Ironstone Entrance Technologies Inc - Created by Bradley Haveman - HTML, JavaScript, CSS, PHP, WordPress" class="img-responsive"/>
-                        </div>
-                        <!-- //.testimonial-image -->
-
-                        <div class="testimonial-content height-100">
-                            <div class="display-table height-100">
-                                <div class="display-table-cell vertical-align-middle">
-                                    <p class="testimonial-quote display-block font-weight-300 title-extra-large">
-                                        <span class="font-weight-400">Bradley</span> did an excellent job in just few hours. Great communication and fast excecution. Thanks for great work :)
-                                    </p>
-
-                                    <p class="testimonial-author display-inline-block font-family-alt margin-3 no-margin-bottom no-margin-rl text-large text-uppercase title-underline">
-                                        Meghan - Ironstone Entrance Technologies Inc.
-                                    </p>
-                                </div>
-                                <!-- //.display-table-cell -->
-                            </div>
-                            <!-- //.display-table -->
-                        </div>
-                        <!-- //.testimonial-content -->
-                    </div>
-                    <!-- //.item -->
-                    
-                    <div class="item position-relative width-100">
-                        <div class="testimonial-image height-100 position-absolute">
-                            <img src="assets/images/testimonial/02.jpg" alt="Lambda Solutions - Created by Bradley Haveman - HTML, JavaScript, CSS, HubSpot" class="img-responsive"/>
-                        </div>
-                        <!-- //.testimonial-image -->
-
-                        <div class="testimonial-content height-100">
-                            <div class="display-table height-100">
-                                <div class="display-table-cell vertical-align-middle">
-                                    <p class="testimonial-quote display-block font-weight-300 title-extra-large">
-                                        Everything was delivered on time, great knowledge of Hubspot platform. Will definitely consider working again.
-                                    </p>
-
-                                    <p class="testimonial-author display-inline-block font-family-alt margin-3 no-margin-bottom no-margin-rl text-large text-uppercase title-underline">
-                                        George - Lambda Solutions
-                                    </p>
-                                </div>
-                                <!-- //.display-table-cell -->
-                            </div>
-                            <!-- //.display-table -->
-                        </div>
-                        <!-- //.testimonial-content -->
-                    </div>
-                    <!-- //.item -->
-                    
-                    <div class="item position-relative width-100">
-                        <div class="testimonial-image height-100 position-absolute">
-                            <img src="assets/images/testimonial/02.jpg" alt="Social Network Elite - Created by Bradley Haveman - HTML, JavaScript, CSS, HubSpot" class="img-responsive"/>
-                        </div>
-                        <!-- //.testimonial-image -->
-
-                        <div class="testimonial-content height-100">
-                            <div class="display-table height-100">
-                                <div class="display-table-cell vertical-align-middle">
-                                    <p class="testimonial-quote display-block font-weight-300 title-extra-large">
-                                        Working with <span class="font-weight-400">Bradley</span> was probably one of my best experiences ever. My website needed specific features and customization. He delivered everything I asked and then some!
-                                    </p>
-
-                                    <p class="testimonial-author display-inline-block font-family-alt margin-3 no-margin-bottom no-margin-rl text-large text-uppercase title-underline">
-                                        Social Network Elite
-                                    </p>
-                                </div>
-                                <!-- //.display-table-cell -->
-                            </div>
-                            <!-- //.display-table -->
-                        </div>
-                        <!-- //.testimonial-content -->
-                    </div>
-                    <!-- //.item -->
-                </div>
-                <!-- //.slides -->
-                
-                <div class="testimonial-slider-nav">
-                    <i class="nav-previous fas fa-long-arrow-alt-left display-block font-weight-700 text-center title-small position-absolute"></i>
-                    <i class="nav-next fas fa-long-arrow-alt-right display-block font-weight-700 text-center title-small position-absolute"></i>
-                </div>
-                <!-- //.testimonial-slider-nav -->
-            </div>
-            <!-- //.testimonial-slider -->
-        </div>
-        <!-- //.section-content -->
-    </section>
-    <!-- //SECTION - TESTIMONIAL END -->
-
-    <!-- SECTION - STATS START -->
-    <section id="stats" class="section background-gray-light no-padding-bottom">
-        <div class="section-content">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-10 col-md-offset-1">
-                        <div class="text-center">
-                            <h3 class="section-title display-inline-block font-family-alt text-extra-large text-uppercase title-underline">
-                                Food Purchased & Consumed in a Week
-                            </h3>
-                        </div>
-                        <!-- //.text-center -->
-
-                        <div id="area-chart" class="area-chart-wrapper">
-                            <div class="area-chart-graph"></div>
-
-                            <div class="area-chart-data display-none">
-                                <div class="area-chart-label">
-                                    <span>Monday</span>
-                                    <span>Tuesday</span>
-                                    <span>Wednesday</span>
-                                    <span>Thursday</span>
-                                    <span>Friday</span>
-                                    <span>Saturday</span>
-                                    <span>Sunday</span>
-                                </div>
-                                <!-- //.area-chart-label -->
-
-                                <div class="area-chart-series">
-                                    <div class="series" data-legend="Kale">
-                                        <span>3</span>
-                                        <span>2</span>
-                                        <span>1</span>
-                                        <span>4</span>
-                                        <span>6</span>
-                                        <span>7</span>
-                                        <span>3</span>
-                                    </div>
-                                    <!-- //.series -->
-
-                                    <div class="series" data-legend="M&M'S">
-                                        <span>2</span>
-                                        <span>3</span>
-                                        <span>5</span>
-                                        <span>8</span>
-                                        <span>7</span>
-                                        <span>2</span>
-                                        <span>3</span>
-                                    </div>
-                                    <!-- //.series -->
-
-                                    <div class="series" data-legend="Broccoli">
-                                        <span>1</span>
-                                        <span>2</span>
-                                        <span>3</span>
-                                        <span>2</span>
-                                        <span>2</span>
-                                        <span>1</span>
-                                        <span>3</span>
-                                    </div>
-                                    <!-- //.series -->
-                                </div>
-                                <!-- //.area-chart-series -->
-                            </div>
-                            <!-- //.area-chart-data -->
-                        </div>
-                        <!-- //.area-chart-wrapper -->
-                    </div>
-                    <!-- //.col-md-10 -->
-                </div>
-                <!-- //.row -->
-            </div>
-            <!-- //.container -->
-        </div>
-        <!-- //.section-content -->
-    </section>
-    <!-- //SECTION - STATS END -->
-
-    <!-- SECTION - CONTACT START -->
-    <section id="contact" class="section background-gray-light no-padding-bottom">
-        <div class="section-content">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <h3 class="section-title display-inline-block font-family-alt margin-4 no-margin-rl no-margin-top text-extra-large text-uppercase title-underline">
-                            Get in Touch
-                        </h3>
-
-                        <p class="font-weight-300 title-extra-large-3">
-                            I love to make <span class="font-weight-400">new</span> <span class="text-highlight">contacts</span> with people.
-                            Feel free to drop me an email: <span class="display-inline-block font-weight-400"><a href="mailto:bradley@haveman.ca">bradley@haveman.ca</a></span>
-                        </p>
-
-                        <p class="font-weight-300 margin-3-5 no-margin-bottom no-margin-rl title-extra-large-3 pb100">
-                            Thanks for stopping by, <span class="font-weight-400">I hope you </span> have a <span class="text-highlight">great </span> day :)
-                        </p>
-                    </div>
-                    <!-- //.col-md-12 -->
-                </div>
-                <!-- //.row -->
-            </div>
-            <!-- //.container -->
-        </div>
-        <!-- //.section-content -->
-    </section>
-    <!-- //SECTION - CONTACT END -->
-
-    <!-- SECTION - CONTACT 2 START -->
-    <section id="contact-2" class="section">
-        <div class="section-content">
-            <div class="container">
-                <div class="row">
-                    
-                    <div class="col-md-6 col-md-offset-3">
-                        <div class="contact-info background-color border-rounded margin-6 sm-no-margin no-margin-tb no-margin-right">
-                            <h3 class="font-family-alt letter-spacing-2 title-small text-uppercase text-white">Contact Info</h3>
-                            
-                            <ul class="list-unstyled">
-                                <li class="clearfix display-block">
-                                    <i class="icon-Map-Marker2 text-white title-extra-large pull-left"></i>
-                                    
-                                    <div class="pull-left">
-                                        <span class="display-block font-family-alt font-weight-700 letter-spacing-1 text-large text-uppercase text-white">Location</span>
-                                        <span class="display-block font-family-alt letter-spacing-1 text-medium text-uppercase text-white">Ontario, Canada</span>
-                                    </div>
-                                    <!-- //.pull-left -->
-                                </li>
                                 
-                                <li class="clearfix display-block">
-                                    <i class="icon-Email text-white title-extra-large pull-left"></i>
-                                    
-                                    <div class="pull-left">
-                                        <span class="display-block font-family-alt font-weight-700 letter-spacing-1 text-large text-uppercase text-white">Email</span>
-                                        <span class="display-block font-family-alt letter-spacing-1 text-medium text-uppercase text-white">bradley@haveman.ca</span>
+                                <div class="text-center">
+                                    <h5 class="intro">I am a <b>developer</b> from Ontario, Canada. I love to talk with you about your needs.</h5>
+                                    <p class="mb-15">Growing up I always had a knack for computers, this turned into a passion for coding. Now I am doing what I love, making beautiful websites for my clients.</p>
+                                    <p>I love to meet new people. Feel free to drop me an email so we can chat.</p>
+
+                                    <p>Thanks for stopping by, I hope you have a great day :)</p>
+                                </div>
+
+                                <div class="inform">
+                                    <div class="row">
+                                        <div class="col-md-4 col-sm-6">
+                                            
+                                        </div>
+                                        <div class="col-md-4 col-sm-6">
+                                            <div class="item mb-md30">
+                                                <span class="icon"><i class="fas fa-envelope"></i></span>
+                                                <div class="cont">
+                                                    <p><a target="_blank" href="mailto:bradley@haveman.ca">bradley@haveman.ca</a></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-sm-6 offset-md-0 offset-sm-3">
+                                            
+                                        </div>
                                     </div>
-                                    <!-- //.pull-left -->
-                                </li>
-                            </ul>
-                            
-                            <ul class="list-unstyled list-inline title-medium text-center">
-                                <li><a target="_blank" href="https://github.com/bradhave94" class="text-white"><i class="fab fa-github"></i></a></li>
-                                <li><a target="_blank" href="https://www.linkedin.com/in/bradley-haveman/" class="text-white"><i class="fab fa-linkedin"></i></a></li>
-                                <li><a target="_blank" href="https://twitter.com/bradleyhaveman" class="text-white"><i class="fab fa-twitter"></i></a></li>
-                            </ul>
+                                </div>
+
+                                <div class="services mt-80">
+                                    <div class="sub-head mb-50">
+                                        <h5>What <span>I Do</span></h5>
+                                    </div>
+
+                                    <div class="row">
+                                        
+                                        <div class="col-md-12">
+                                            <div class="item text-center">
+                                                <span class="icon ti-desktop"></span>
+                                                <div class="cont">
+                                                    <h6>Web Development</h6>
+                                                    <p>I'm always excited to hear about new ideas and collaborations.<br>Shoot me an email I'd love to chat!</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="price mt-50">
+                                    <div class="sub-head mb-50">
+                                        <h5>My <span>Offers</span></h5>
+                                    </div>
+
+                                    <div class="pricing-tables text-center full-width">
+
+                                        <div class="row">
+                
+                                            <div class="col-md-6">
+                                                <div class="item mb-sm50">
+                                                    <div class="type">
+                                                        <h5>Basic Website</h5>
+                                                    </div>
+                
+                                                    <div class="value">
+                                                        <h3><span>$</span></h3>
+                                                    </div>
+                
+                                                    <div class="features">
+                                                        <ul>
+                                                            <li>Static Site</li>
+                                                            <li>Cheap or Possibly Free Hosting</li>
+                                                            <li>No monthly costs</li>
+                                                        </ul>
+                                                    </div>
+                
+                                                    <div class="order">
+                                                        <a target="_blank" href="mailto:bradley@haveman.ca" class="butn butn-bord">
+                                                            <span>Get Started</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                
+                                            <div class="col-md-6">
+                                                <div class="item active">
+                
+                                                    <div class="best">
+                                                        <span>Recommended</span>
+                                                    </div>
+                
+                                                    <div class="type">
+                                                        <h5>CMS Website</h5>
+                                                    </div>
+                
+                                                    <div class="value">
+                                                        <h3><span>$$$</span></h3>
+                                                    </div>
+                
+                                                    <div class="features">
+                                                        <ul>
+                                                            <li>CMS Hosted Website (HubSpot, WordPress, WebFlow, etc.)</li>
+                                                            <li>Easy to Edit</li>
+                                                            <li>Varying Monthly Fees</li>
+                                                        </ul>
+                                                    </div>
+                
+                                                    <div class="order">
+                                                        <a target="_blank" href="mailto:bradley@haveman.ca" class="butn butn-bg">
+                                                            <span>Get Started</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="testimonials mt-80">
+                                    <div class="sub-head mb-50">
+                                        <h5><span>Testi</span>monials</h5>
+                                    </div>
+
+                                    <div class="owl-carousel owl-theme">
+                                        <div class="item">
+                                                <p> " Bradley did an excellent job in just few hours. Great communication and fast execution. Thanks for great work :) "</p>
+                                            <div class="client-area">
+                                                <h6>Meghan</h6>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                                <p> " Everything was delivered on time, great knowledge of HubSpot platform. Will definitely consider working again. " </p>
+                                            <div class="client-area">
+                                                <h6>George</h6>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                                <p> " Working with Bradley was probably one of my best experiences ever. My website needed specific features and customization. He delivered everything I asked and then some! " </p>
+                                            <div class="client-area">
+                                                <h6>SNE</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+
+                            </div>
                         </div>
-                        <!-- //.contact-info -->
+                        <div class="col-lg-5 simg bg-img" data-background="img/1.jpg"></div>
+
                     </div>
-                    <!-- //.col-md-6 -->
                 </div>
-                <!-- //.row -->
             </div>
-            <!-- //.container -->
-        </div>
-        <!-- //.section-content -->
-    </section>
-    <!-- //SECTION - CONTACT 2 END -->
+            <!-- /About -->
 
-    <!-- FOOTER START -->
-    <footer class="section footer background-gray-light">
-        <div class="section-content">
-            <div class="container">
-                <div class="row">
-                    <div class="footer-column col-sm-4">
-                        <span class="display-inline-block font-weight-700 letter-spacing-2 margin-3-5 no-margin-rl no-margin-top text-medium text-uppercase title-underline">
-                            Contact
-                        </span>
+            <!-- Resume -->
+            <div class="page resume" id="page-resume">
+                <div class="container-fluid">
+                    <div class="row">
 
-                        <ul class="list-unstyled title-medium">
-                            <li><a href="mailto:bradley@haveman.ca">bradley@haveman.ca</a></li>
-                        </ul>
+                        <div class="col-lg-7">
+                            <div class="content section-padding">
+
+                                <div class="section-head">
+                                    <h5><span>R</span>esume</h5>
+                                    <h3>Resume</h3>
+                                </div>
+
+                                <div class="clmn">
+                                    
+                                    <div class="sub-head mb-50">
+                                        <h5><span>Exper</span>ience</h5>
+                                    </div>
+
+                                    <div class="exp">
+                                        <div>
+                                            <div class="row">
+                                                <div class="col-md-5 col-sm-3">
+                                                    <span class="date">2017 - <b>Current</b></span>
+                                                </div>
+                                                <div class="col-md-7 col-sm-9 right">
+                                                    <h6>Lean Labs</h6>
+                                                    <h4>Front-End Developer</h4>
+                                                    <p>I am part of the development team at Lean Labs. I write code that translates into websites.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="row">
+                                                <div class="col-md-5 col-sm-3">
+                                                    <span class="date">2014 - <b>2017</b></span>
+                                                </div>
+                                                <div class="col-md-7 col-sm-9 right">
+                                                    <h6>The Brit Agency</h6>
+                                                    <h4>Web Devloper</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="clmn">
+                                    
+                                    <div class="sub-head mb-50">
+                                        <h5>Educ<span>ation</span></h5>
+                                    </div>
+
+                                    <div class="edu">
+                                        <div>
+                                            <div class="row">
+                                                <div class="col-md-5 col-sm-3">
+                                                    <span class="date">2013 - <b>2016</b></span>
+                                                </div>
+                                                <div class="col-md-7 col-sm-9 right">
+                                                    <h6>Advanced Degree, Computer Programmer Analysts <small>With Honours</small></h6>
+                                                    <h4>Georgian College</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="skills mt-80">
+                                    <div class="sub-head mb-50">
+                                        <h5>Best <span>Skills</span></h5>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="skill mb-md50">
+                                                <div class="skill-item">
+                                                    <h5>HTML / CSS</h5>
+                                                </div>
+                                                <div class="skill-item">
+                                                    <h5>HubSpot</h5>
+                                                </div>
+                                                <div class="skill-item">
+                                                    <h5>PROBLEM SOLVER</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="skill">
+                                                <div class="skill-item">
+                                                    <h5>WordPress</h5>
+                                                </div>
+                                                <div class="skill-item">
+                                                    <h5>JAVASCRIPT / JQUERY</h5>
+                                                </div>
+                                                <div class="skill-item">
+                                                    <h5>FAST LEARNER</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+        
+                            </div>
+                        </div>
+                        <div class="col-lg-5 simg bg-img" data-background="img/2.jpg"></div>
+
                     </div>
-                    <!-- //.footer-column -->
-
-                    <div class="footer-column col-sm-5">
-                        <span class="display-inline-block font-weight-700 letter-spacing-2 margin-3-5 no-margin-rl no-margin-top text-medium text-uppercase title-underline">
-                            Location
-                        </span>
-
-                        <ul class="list-unstyled title-medium">
-                            <li>Ontario, Canada</li>
-                        </ul>
-                    </div>
-                    <!-- //.footer-column -->
-
-                    <div class="footer-column col-sm-3 text-medium">
-                        <span class="display-inline-block font-weight-700 letter-spacing-2 margin-3-5 no-margin-rl no-margin-top text-medium text-uppercase title-underline">
-                            Social
-                        </span>
-
-                        <ul class="list-unstyled letter-spacing-1 title-medium">
-                            <li><a href="https://github.com/bradhave94" target="_blank">GitHub</a></li>
-                            <li><a href="https://www.linkedin.com/in/bradley-haveman/" target="_blank">LinkedIn</a></li>
-                            <li><a href="https://twitter.com/bradleyhaveman" target="_blank">Twitter</a></li>
-                        </ul>
-                    </div>
-                    <!-- //.footer-column -->
                 </div>
-                <!-- //.row -->
             </div>
-            <!-- //.container -->
-        </div>
-        <!-- //.section-content -->
+            <!-- /Resume -->
 
-        <div class="copyright background-gray position-absolute text-center width-100">
-            <span class="font-family-alt letter-spacing-1 line-height-none text-small">
-                Copyright &copy; Bradley Haveman 2020. All rights reserved.
-            </span>
-        </div>
-        <!-- //.copyright -->
-    </footer>
-    <!-- //FOOTER END -->
+            <!-- Portfolio -->
+            <div class="page portfolio" id="page-work">
+                <div class="container-fluid">
+                    <div class="row">
 
-    <!-- Loading jQuery -->
-    <script src="assets/plugins/jquery/jquery.min.js"></script>
+                        <div class="col-lg-7">
+                            <div class="content section-padding">
 
-    <!-- Loading Bootstrap JS -->
-    <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+                                <div class="section-head">
+                                    <h5><span>P</span>ortfolio</h5>
+                                    <h3>Works</h3>
+                                </div>
 
-    <!-- Include all js plugins (below) -->
-    <script src="assets/plugins/debouncer/debouncer.js"></script>
-    <script src="assets/plugins/easing/jquery.easing.min.js"></script>
-    <script src="assets/plugins/skrollr/skrollr.min.js"></script>
-    <script src="assets/plugins/chartist-js/chartist.min.js"></script>
-    <script src="assets/plugins/isotope/isotope.pkgd.min.js"></script>
-    <script src="assets/plugins/magnific-popup/jquery.magnific-popup.min.js"></script>
-    <script src="assets/plugins/flexslider/jquery.flexslider-min.js"></script>
-    <script src="assets/plugins/tiny-scrollbar/jquery.tinyscrollbar.min.js"></script>
-    <script src="assets/plugins/flickity/flickity.pkgd.min.js"></script>
-
-    <!-- Preloader JS -->
-    <script src="assets/plugins/pace/pace.min.js"></script>
-
-    <!-- Loading Theme JS -->
-    <script src="assets/js/main.js"></script>
-    <script src="assets/js/text-rotator.js"></script>
-    <script src="assets/js/project.js"></script>
+                                <!-- filter links -->
+                                <div class="filtering text-right full-width">
+                                    <div class="filter">
+                                        <span data-filter='*' class="active">All</span>
+                                        <span data-filter='.hubspot'>HubSpot</span>
+                                        <span data-filter='.wordpress'>WordPress</span>
+                                        <span data-filter='.custom'>Custom</span>
+                                    </div>
+                                </div>
     
-</body>
+                                <!-- gallery -->
+                                <div class="gallery row">
+            
+                                    <!-- gallery item -->
+                                    <div class="items col-md-6 custom">
+                                        <div class="item-img">
+                                            <img src="img/portfolio/1.jpg" alt="Mordhau Mercenaries">
+                                            <div class="item-img-overlay">
+                                                <div class="overlay-info full-width">
+                                                    <div class="des">
+                                                        <p>Mordhau Mercenaries</p>
+                                                        <h6>A place to share you Mordhau Loadouts with the community.</h6>
+                                                    </div>
+                                                    <a target="_blank" href="https://mordhaumercenaries.com/">
+                                                        <span class="icon"><i class="fas fa-long-arrow-alt-right"></i></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+            
+                                    <!-- gallery item -->
+                                    <div class="items col-md-6 custom">
+                                        <div class="item-img">
+                                            <img src="img/portfolio/2.jpg" alt="o Man's Sky Recipe">
+                                            <div class="item-img-overlay">
+                                                <div class="overlay-info full-width">
+                                                    <div class="des">
+                                                        <p>No Man's Sky Recipes</p>
+                                                        <h6>One stop shop for all No Man's Sky recipes</h6>
+                                                    </div>
+                                                    <a target="_blank" href="https://www.nomansskyrecipes.com/">
+                                                        <span class="icon"><i class="fas fa-long-arrow-alt-right"></i></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+            
+                                    <!-- gallery item -->
+                                    <div class="items col-md-6 custom">
+                                        <div class="item-img">
+                                            <img src="img/portfolio/3.jpg" alt="Symbol 2 Clipboard">
+                                            <div class="item-img-overlay">
+                                                <div class="overlay-info full-width">
+                                                    <div class="des">
+                                                        <p>Symbol 2 Clipboard</p>
+                                                        <h6>This extension will copy the clicked symbol to your clipboard.</h6>
+                                                    </div>
+                                                    <a target="_blank" href="https://chrome.google.com/webstore/detail/symbol-2-clipboard/bfeejloklpgplmhehbmoenmgkjboifbi">
+                                                        <span class="icon"><i class="fas fa-long-arrow-alt-right"></i></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+            
+                                    <!-- gallery item -->
+                                    <div class="items col-md-6">
+                                        <div class="item-img">
+                                            <img src="img/portfolio/4.jpg" alt="Midland Alliance Church">
+                                            <div class="item-img-overlay">
+                                                <div class="overlay-info full-width">
+                                                    <div class="des">
+                                                        <p>Midland Alliance Church</p>
+                                                        <h6>Web Development</h6>
+                                                    </div>
+                                                    <a target="_blank" href="https://machurch.ca/">
+                                                        <span class="icon"><i class="fas fa-long-arrow-alt-right"></i></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- gallery item -->
+                                    <div class="items col-md-6 hubspot">
+                                        <div class="item-img">
+                                            <img src="img/portfolio/5.jpg" alt="Social Network Elite">
+                                            <div class="item-img-overlay">
+                                                <div class="overlay-info full-width">
+                                                    <div class="des">
+                                                        <p>Social Network Elite</p>
+                                                        <h6>HubSpot Website</h6>
+                                                    </div>
+                                                    <a target="_blank" href="https://www.socialnetworkelite.com/">
+                                                        <span class="icon"><i class="fas fa-long-arrow-alt-right"></i></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- gallery item -->
+                                    <div class="items col-md-6 hubspot">
+                                        <div class="item-img">
+                                            <img src="img/portfolio/6.jpg" alt="Zoola Analytics">
+                                            <div class="item-img-overlay">
+                                                <div class="overlay-info full-width">
+                                                    <div class="des">
+                                                        <p>Zoola Analytics</p>
+                                                        <h6>HubSpot Website</h6>
+                                                    </div>
+                                                    <a target="_blank" href="https://www.zoola.io/">
+                                                        <span class="icon"><i class="fas fa-long-arrow-alt-right"></i></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+
+                                    <!-- gallery item -->
+                                    <div class="items col-md-6 wordpress">
+                                        <div class="item-img">
+                                            <img src="img/portfolio/7.jpg" alt="Ironstone Entrance Technologies">
+                                            <div class="item-img-overlay">
+                                                <div class="overlay-info full-width">
+                                                    <div class="des">
+                                                        <p>Ironstone Entrance Technologies</p>
+                                                        <h6>WordPress Website</h6>
+                                                    </div>
+                                                    <a target="_blank"  href="http://www.ietinc.ca/">
+                                                        <span class="icon"><i class="fas fa-long-arrow-alt-right"></i></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+            
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-lg-5 simg bg-img" data-background="img/3.jpg"></div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- /Portfolio -->
+
+            <!-- Contact -->
+            <div class="page contact" id="page-contact">
+                <div class="container-fluid">
+                    <div class="row">
+
+                        <div class="col-lg-12">
+                            <div class="content section-padding">
+                                <div class="contact-info">
+                                    <div class="row">
+                                        <div class="col-sm-12 text-center">
+                                            <h2><a href="mailto:bradley@haveman.ca">bradley@haveman.ca</a></h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- /Contact -->
+
+        </div>
+
+        <!-- End pages-stack ====
+        ======================================= -->
+
+
+
+        <!-- =====================================
+        ==== Start nav-button -->
+
+	    <div class="nav-button">
+            <button class="menu-button menu-icon hover-target" id="menu-button"><span>Menu</span></button>
+        </div>
+
+        <!-- End nav-button ====
+        ======================================= -->
+       
+        <!-- jQuery -->
+        <script src="js/jquery-3.0.0.min.js"></script>
+        <script src="js/jquery-migrate-3.0.0.min.js"></script>
+
+        <!-- popper.min -->
+        <script src="js/popper.min.js"></script>
+
+        <!-- bootstrap -->
+        <script src="js/bootstrap.min.js"></script>
+
+        <!-- classie -->
+        <script src="js/classie.js"></script>
+
+        <!-- Main -->
+        <script src="js/main.js"></script>
+
+        <!-- jquery.waypoints.min -->
+        <script src="js/jquery.waypoints.min.js"></script>
+
+        <!-- jquery.counterup.min -->
+        <script src="js/jquery.counterup.min.js"></script>
+
+        <!-- owl carousel -->
+        <script src="js/owl.carousel.min.js"></script>
+
+        <!-- isotope.pkgd.min js -->
+        <script src="js/isotope.pkgd.min.js"></script>
+
+        <!-- jquery.magnific-popup.min js -->
+        <script src="js/jquery.magnific-popup.min.js"></script>
+
+        <!-- validator js -->
+        <script src="js/validator.js"></script>
+
+        <!-- custom scripts -->
+        <script src="js/scripts.js"></script>
+
+    </body>
 </html>
