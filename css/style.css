@@ -1075,7 +1075,13 @@ span, a, a:hover {
     font-size: 40px;
   }
 }
+iframe {
+  min-height: 520px;
+}
 @media screen and (max-width: 767px) {
+  iframe {
+    min-height: 270px;
+  }
   .mb-sm50 {
     margin-bottom: 50px;
   }
